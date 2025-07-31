@@ -11,6 +11,17 @@ make
 
 Output: `outtest.csv`
 
+#############    IMP NOTE  ##################
+
+While implementing the mbp10 from the mbo I have seen that data in the given mbp10 does not corressponds to the each mbo order ids. Therefore, I have implemented entries in mbp10 for each order id whether it is add/cancel for ask/bid. There might be some entries missing the given mbp10 file or the requirement is not clear to me. I have raised an email for this but didn't get revert.
+I have give the submission for the problem understanding that I have, if this was clear then I built for this requirement also. 
+Thanks
+
+
+
+
+#############################################
+
 ## ⚙️ Optimization Highlights
 
 - **Efficient Maps**: Used `std::map` with `greater<>` for bid, natural order for ask.
@@ -24,6 +35,7 @@ Output: `outtest.csv`
 - Skip trades with side `N`.
 - Only top 10 levels are output.
 - Format matches provided `mbp.csv`.
+
 
 ## 📁 Files
 
